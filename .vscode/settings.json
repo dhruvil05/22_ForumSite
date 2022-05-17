@@ -1,0 +1,8 @@
+{
+    "php.validate.executablePath": "E:/xampp/php/php.exe",
+    "php.debug.executablePath": "",
+    "phpformatter.additionalExtensions": [
+    
+    ],
+    "php.executablePath": ""
+}

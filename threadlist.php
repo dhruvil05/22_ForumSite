@@ -39,8 +39,8 @@
     $showAlert = false;
         $method = $_SERVER['REQUEST_METHOD'];
         if($method=='POST'){
-            $th_title = $_POST['title'];
-            $th_desc = $_POST['desc'];
+            $th_title = mysqli_real_escape_string($conn, $_POST['title']);
+            $th_desc = mysqli_real_escape_string($conn, $_POST['desc']);
             
             $sql = "INSERT INTO `threads` (`thread_title`, `thread_desc`, `thread_cat_id`, `thread_user_id`, `timestamp`) VALUES ('$th_title', '$th_desc', '$id', '0', current_timestamp())";
 

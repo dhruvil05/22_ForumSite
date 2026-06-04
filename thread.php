@@ -39,8 +39,8 @@
     $showAlert = false;
         $method = $_SERVER['REQUEST_METHOD'];
         if($method=='POST'){
-            // Insert into comment db
-            $comment = $_POST['comment'];
+            // validate the description Insert into comment db
+            $comment = mysqli_real_escape_string($conn, $_POST['comment']);
             $sql = "INSERT INTO `comment` ( `comment_content`, `thread_id`, `comment_by`, `comment_time`) VALUES ('$comment', '$id', '0', current_timestamp())";
             $result = mysqli_query($conn,$sql);
             $showAlert = true;

@@ -11,7 +11,7 @@
                 <h5 class="modal-title" id="loginModalLabel">Login to Talking</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <form action="/forum/partial/_handelLogin.php" method="post">
+            <form action="/22_Forumsite/partial/_handelLogin.php" method="post">
                 <div class="modal-body">
 
                     <div class="mb-3">

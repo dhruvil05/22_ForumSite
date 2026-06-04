@@ -19,7 +19,7 @@
                 
             }
                
-            header("Location: /forum/index.php");
+            header("Location: /22_Forumsite/index.php");
             
         }
     }   

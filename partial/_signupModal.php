@@ -12,7 +12,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             
-            <form action="/forum/partial/_handleSignup.php" method="POST">
+            <form action="/22_Forumsite/partial/_handleSignup.php" method="POST">
                 <div class="modal-body">
 
                     <div class="mb-3">

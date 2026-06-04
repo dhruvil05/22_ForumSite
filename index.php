@@ -29,13 +29,13 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://source.unsplash.com/1600x600/?programming" class="d-block w-100" alt="...">
+                <img src="https://picsum.photos/seed/programming/1600/600" class="d-block w-100" alt="Programming image">
             </div>
             <div class="carousel-item">
-                <img src="https://source.unsplash.com/1600x600/?typing" class="d-block w-100" alt="...">
+                <img src="https://picsum.photos/seed/typing/1600/600" class="d-block w-100" alt="Typing image">
             </div>
             <div class="carousel-item">
-                <img src="https://source.unsplash.com/1600x600/?programmer" class="d-block w-100" alt="...">
+                <img src="https://picsum.photos/seed/programmer/1600/600" class="d-block w-100" alt="Programmer image">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -65,7 +65,7 @@
                 $desc = $row['category_description'];
                 echo ' <div class="col-md-4 my-2">
                 <div class="card" style="width: 18rem;">
-                    <img src="https://source.unsplash.com/500x400/?' . $cat . ',coding" class="card-img-top" alt="...">
+                    <img src="https://picsum.photos/seed/' . urlencode($cat) . '/500/400" class="card-img-top" alt="Category image">
                     <div class="card-body">
                         <h5 class="card-title"><a href="threadlist.php?catid=' . $id . '">'. $cat .'</a></h5>
                         <p class="card-text">'. substr($desc, 0, 30) .'...</p>

@@ -23,7 +23,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
             echo $result;
             if($result){
                 $showAlert = true;
-                header("Location: /forum/index.php?signupsuccess=true");
+                header("Location: /22_Forumsite/index.php?signupsuccess=true");
                 exit();
 
             }
@@ -35,7 +35,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         }
         
     }
-    header("Location: /forum/index.php?signupsuccess=false&error=$showError");
+    header("Location: /22_Forumsite/index.php?signupsuccess=false&error=$showError");
 
 
 }
